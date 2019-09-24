@@ -10,6 +10,8 @@ public class Constants {
 			H2_DRIVER = "org.h2.jdbc.Driver",
 			H2_URL = " jdbc:h2://localhost:3306",
 			USERNAME = "c##oracle", 
-			PASSWORD="oracle";
+			PASSWORD="oracle"
+			
+			;
 }
 
