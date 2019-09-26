@@ -14,10 +14,12 @@ public class Commander {
 				request.getParameter("page")));
 		Command cmd = null;
 		switch(Action.valueOf(request.getParameter("action").toUpperCase())) {
-		case SEARCH : cmd = new SearchCommand(request); break;
+		case LOGIN : cmd = new LoginCommand(request); break;
 		case MOVE : cmd = 
 				new MoveCommand(request);
 				break;
+		default:
+			break;
 		}
 		
 		return cmd;

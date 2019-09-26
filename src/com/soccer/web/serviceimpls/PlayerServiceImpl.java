@@ -12,9 +12,12 @@ public class PlayerServiceImpl implements PlayerService{
 	public static PlayerServiceImpl getInstance() {return instance;}
 	public PlayerServiceImpl() {}
 	@Override
-	public boolean login(PlayerBean param) {
-		// TODO Auto-generated method stub
-		return false;
+	public PlayerBean login(PlayerBean param) {
+		System.out.println("★★★ 6. PlayerServiceImpl 의 login() 으로 이동 ★★★ ");
+		System.out.println(String.format("param 값 출력 : %s, %s ",
+				param.getPlayerId(), 
+				param.getSolar()));
+		return PlayerDaoImpl.getInstance().seletByPlayerIdSolar(param);
 	}
 	@Override
 	public List<String> findPositions() {

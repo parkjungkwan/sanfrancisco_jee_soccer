@@ -5,7 +5,7 @@ public class Constants {
 			SINGLE_PATH = "/WEB-INF/views/%s.jsp",
 			DOUBLE_PATH = "/WEB-INF/views/%s/%s.jsp",
 			TRIPPLE_PATH = "/WEB-INF/views/%s/%s/%s.jsp",
-			VENDOR = "oracle",
+			VENDOR = "ORACLE",
 			USERNAME = "c##oracle", 
 			PASSWORD="oracle";
 }

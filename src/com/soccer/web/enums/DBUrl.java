@@ -4,16 +4,16 @@ public enum DBUrl {
 	ORACLE_URL, MARIADB_URL;
 	@Override
 	public String toString() {
-		String driver = "";
+		String url = "";
 		switch (this) {
 		case ORACLE_URL:
-			driver = "oracle.jdbc.OracleDriver";
+			url = "jdbc:oracle:thin:@localhost:1521:xe";
 			break;
 
 		default:
 			break;
 		}
-		return driver;
+		return url;
 	}
 
 }

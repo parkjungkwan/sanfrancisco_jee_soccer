@@ -25,7 +25,7 @@
 			</td>
 		</tr>
 	</table>
-	<input type="hidden" name="action" value="move" style="width: 100%;height: 100%"/>
+	<input type="hidden" name="action" value="login" style="width: 100%;height: 100%"/>
 	<input type="hidden" name="page" value="home" style="width: 100%;height: 100%"/>
 	</form>
 	<h3 style="width:300px;margin: 0 auto"><a id="a_join" href="">회원가입</a></h3>
