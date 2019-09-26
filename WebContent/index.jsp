@@ -17,7 +17,7 @@
 			</td>
 			<td rowspan="2">
 				<input type="submit" value="로그인" style="width: 100%;height: 100%"/>
-			</td>
+			</td>  
 		</tr>
 		<tr>
 			<td>
