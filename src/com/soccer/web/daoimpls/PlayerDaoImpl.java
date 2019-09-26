@@ -28,7 +28,8 @@ public class PlayerDaoImpl implements PlayerDao{
 			ResultSet rs = DatabaseFactory
 					.createDatabase(Constants.VENDOR)
 					.getConnection()
-					.prepareStatement(sql).executeQuery();
+					.prepareStatement(sql)
+					.executeQuery();
 			while(rs.next()) {
 				positions.add(rs.getString("position"));
 			}

@@ -4,7 +4,7 @@ import java.io.Serializable;
 
 public class PlayerBean implements Serializable {
 	private static final long serialVersionUID = 1L;
-	private String playerId,
+	private String playerId, // ID
 				playerName,
 				teamId,
 				ePlayerName,
@@ -14,7 +14,7 @@ public class PlayerBean implements Serializable {
 				backNo,
 				nation,
 				birthDate,
-				solar,
+				solar, // PW
 				height,
 				weight;
 

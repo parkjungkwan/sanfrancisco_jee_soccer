@@ -9,10 +9,13 @@ import com.soccer.web.services.PlayerService;
 
 public class PlayerServiceImpl implements PlayerService{
 	private static PlayerServiceImpl instance = new PlayerServiceImpl();
-	public static PlayerServiceImpl getInstance() {
-		return instance;
+	public static PlayerServiceImpl getInstance() {return instance;}
+	public PlayerServiceImpl() {}
+	@Override
+	public boolean login(PlayerBean param) {
+		// TODO Auto-generated method stub
+		return false;
 	}
-	private PlayerServiceImpl() {}
 	@Override
 	public List<String> findPositions() {
 		return PlayerDaoImpl.
@@ -30,5 +33,6 @@ public class PlayerServiceImpl implements PlayerService{
 	public List<PlayerBean> findByTeamIdHeightName(PlayerBean param) {
 		return null;
 	}
+	
 
 }
