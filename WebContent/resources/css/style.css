@@ -1,0 +1,43 @@
+@charset "UTF-8";
+html, body {
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+}
+.wrapper{
+	display: grid;
+	width: 100%;
+	height: 100%;
+	background-color: yellow;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: 20% 60% 20%;
+}
+.wrapper div{border : 1px dotted black}
+#soccer_intro{
+	width: 100%;
+	height: 100%;
+}
+#login_tab{
+	width:80%;
+	height:400px; 
+	margin: 10% auto;
+	border : 1px solid black;
+}
+#login_tab tr{width:100%; height: 50%;border : 1px solid black;}
+#login_tab tr td{width:100%; height: 50%;border : 1px solid black;}
+#login_submit{width: 200px;height: 100%;}
+.input_text{height: 100px; width: 80%;}
+#join_a{width:100px;margin: 0 auto}
+
+
+
+
+
+
+
+
+
+
+
+
+
