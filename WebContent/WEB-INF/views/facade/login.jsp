@@ -17,7 +17,7 @@
 				<input id="login_btn" type="button" value="로그인" />
 			</div>  
 			<div id="login_tab_item_3">
-				PASSWORD  <input class="input_text" type="text" name="solar">
+				PASSWORD  <input id="solar" class="input_text" type="text" name="solar">
 			</div>
 	</div>
 	<input type="hidden" name="action" value="login" />

@@ -29,10 +29,13 @@ var playerService = (()=>{
 	return {
 		login: ()=>{
 			$('#login_btn').click(()=>{
-				if($('#username').val()===''){
-					alert('필수값이 없습니다.')
+				if($('#username').val()==='' || 
+						$('#solar').val()===''){
+					alert('필수값이 없습니다.');
 				}else{
 					alert('입력한 아이디 값: '+$('#username').val());
+					$('#login_form').attr('action', '/jee-soccer/player.do' );
+					$('#login_form').submit();	
 				}
 				
 			});
