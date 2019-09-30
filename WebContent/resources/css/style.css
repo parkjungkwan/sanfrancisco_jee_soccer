@@ -8,25 +8,30 @@ html, body {
 	display: grid;
 	width: 100%;
 	height: 100%;
-	background-color: yellow;
     grid-template-columns: 20% 60% 20%;
     grid-template-rows: 20% 60% 20%;
 }
-.wrapper div{border : 1px dotted black}
+/* .wrapper div{border : 1px dotted black} */
 #soccer_intro{
 	width: 100%;
 	height: 100%;
 }
 #login_tab{
-	width:80%;
-	height:400px; 
-	margin: 10% auto;
-	border : 1px solid black;
+	display: grid;
+	width: 100%;
+	height: 80%;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 50% 50%;
+    margin: 0 auto;
+    padding-top: 50px;
 }
-#login_tab tr{width:100%; height: 50%;border : 1px solid black;}
-#login_tab tr td{width:100%; height: 50%;border : 1px solid black;}
-#login_submit{width: 200px;height: 100%;}
-.input_text{height: 100px; width: 80%;}
+#login_form{width: 100%; height: 100%}
+#login_tab div{border : 1px solid black;}
+#login_tab_item_1{grid-column: 1/2;}
+#login_tab_item_2{grid-column: 2/3;grid-row: 1/3;}
+#login_tab_item_3{grid-column: 1/2;}
+#login_submit{width:100%; height: 100%}
+.input_text{width: 70%;height: 70px;margin-top: 70px;}
 #join_a{width:100px;margin: 0 auto}
 
 
