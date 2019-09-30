@@ -11,10 +11,10 @@
  <form id="login_form">
 	<div id="login_tab" >
 			<div id="login_tab_item_1" >
-				USERNAME  <input class="input_text" type="text" name="playerId"/>
+				USERNAME  <input id="username" class="input_text" type="text" name="playerId"/>
 			</div>
 			<div id="login_tab_item_2">
-				<input id="login_submit" type="submit" value="로그인" />
+				<input id="login_btn" type="button" value="로그인" />
 			</div>  
 			<div id="login_tab_item_3">
 				PASSWORD  <input class="input_text" type="text" name="solar">
