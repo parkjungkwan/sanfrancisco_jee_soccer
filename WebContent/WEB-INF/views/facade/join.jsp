@@ -5,9 +5,7 @@
     <div id = "join_term"><h3>회원가입</h3></div>
     <div></div>
     <div></div> 
-    <form id = "join_form" action="${ctx}/player.do">
-    <input type="hidden" name = "action" value = "join" />
-    <input type="hidden" name = "page" value = "main" />
+    <form id = "join_form">
     <div id = "join_spac" >
         <div>playerId</div>
         <div class = "input_join"><input id="join_playerId" type="text" name = "playerId" /></div>
@@ -39,6 +37,8 @@
     <div></div>
     <div></div>
     <div><h3><input id="join_btn" type="button" value = "가입하기"  /></h3></div>
+    <input type="hidden" name = "action" value = "create" />
+    <input type="hidden" name = "page" value = "login" />
 </form>
     
     <div></div>

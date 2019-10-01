@@ -16,6 +16,7 @@ import com.soccer.web.command.Sender;
 import com.soccer.web.daoimpls.PlayerDaoImpl;
 import com.soccer.web.daos.PlayerDao;
 import com.soccer.web.domains.PlayerBean;
+import com.soccer.web.enums.Action;
 import com.soccer.web.serviceimpls.PlayerServiceImpl;
 import com.soccer.web.services.PlayerService;
 
@@ -24,15 +25,17 @@ public class PlayerController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
 	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		System.out.println("★★★ 1. 서블릿 들어옴 ★★★ ");
+		System.out.println("★★★ Player 서블릿 들어옴 ★★★ ");
 		System.out.println(String.format("request 값 출력 : %s, %s, %s, %s ",
 				request.getParameter("playerId"), 
 				request.getParameter("solar"),
 				request.getParameter("action"),
 				request.getParameter("page")));
 		Receiver.init(request);
+		switch(Action.valueOf(request.getParameter("action").toUpperCase())) {
+		case CREATE : request.setAttribute("page", "login"); break;
+		default:break;
+		}
 		Sender.forward(request, response);
 	}
-
-
 }

@@ -44,9 +44,9 @@ var playerService = (()=>{
 						$('#join_solar').val()===''){
 					alert('필수값이 없습니다.');
 				}else{
-					alert('입력한 아이디 값: '+$('#username').val());
-					$('#login_form').attr('action', ctx+'/player.do' );
-					$('#login_form').submit();	
+					alert('입력한 아이디 값: '+$('#join_playerId').val());
+					$('#join_form').attr('action', ctx+'/player.do' );
+					$('#join_form').submit();	
 				}
 			});
 		},

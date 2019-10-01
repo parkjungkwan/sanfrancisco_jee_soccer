@@ -81,30 +81,24 @@ public class PlayerDaoImpl implements PlayerDao{
 		List<PlayerBean> list = new ArrayList<>();
 		return list;
 	}
+	
 	@Override
-	public List<PlayerBean> selectByMany(PlayerBean param) {
-		List<PlayerBean> list = new ArrayList<>();
-		String sql = "-";
+	public boolean insertPlayer(PlayerBean param) {
+		boolean flag = false;
 		try {
-			PreparedStatement pstmt = DatabaseFactory
+			String sql = "INSERT INTO PLAYER(PLAYER_ID, SOLAR, TEAM_ID,PLAYER_NAME) \r\n" + 
+					"VALUES(?, ?, 'K03','김광진')";
+			PreparedStatement stmt = DatabaseFactory
 					.createDatabase(Constants.VENDOR)
 					.getConnection()
 					.prepareStatement(sql);
-			pstmt.setString(1, param.getBackNo());
-			pstmt.setString(2, param.getBirthDate());
-			pstmt.setString(3, param.getHeight());
-			pstmt.setString(4, param.getJoinYyyy());
-			ResultSet rs = pstmt.executeQuery();
-			while(rs.next()) {
-				
-			}
-		} catch (SQLException e) {
-			// TODO Auto-generated catch block
+			stmt.setString(1, param.getPlayerId());
+			stmt.setString(2, param.getSolar());
+			int rs = stmt.executeUpdate();
+			flag = (rs == 1);
+		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		
-		return list;
+		return flag;
 	}
-	
-
 }
