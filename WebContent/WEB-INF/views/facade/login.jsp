@@ -1,12 +1,12 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<jsp:include page="../common/head.jsp"/>
- <div></div>
+
+<!--  <div></div> -->
  <div>
  	<img id="soccer_intro" src="${img}/soccer_intro.jpg" alt="" />
 </div>
- <div></div>
- <div></div>
+<!--  <div></div><div></div> -->
+ 
  <div>
  <form id="login_form">
 	<div id="login_tab" >
@@ -24,13 +24,13 @@
 	<input type="hidden" name="page" value="home" />
  </form>
 </div>
- <div></div>
- <div></div>
+<!--  <div></div>
+ <div></div> -->
  <div>
  	<h3 id="join_a"><a id="a_join" href="#">회원가입</a></h3>
  </div>
- <div></div>
-<jsp:include page="../common/foot.jsp"/>
+<!--  <div></div>
+ -->
 <script>
 app.init('${ctx}');
 </script>	
