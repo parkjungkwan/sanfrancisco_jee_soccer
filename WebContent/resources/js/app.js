@@ -33,6 +33,7 @@ var playerService = (()=>{
 				}else{
 					alert('입력한 아이디 값: '+$('#username').val());
 					$('#login_form').attr('action', ctx+'/player.do' );
+					$('#login_form').attr('method','POST');
 					$('#login_form').submit();	
 				}
 				
@@ -46,6 +47,7 @@ var playerService = (()=>{
 				}else{
 					alert('입력한 아이디 값: '+$('#join_playerId').val());
 					$('#join_form').attr('action', ctx+'/player.do' );
+					$('#join_form').attr('method','POST');
 					$('#join_form').submit();	
 				}
 			});
